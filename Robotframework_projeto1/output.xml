@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231211 15:35:14.596" rpa="false" schemaversion="4">
+<suite id="s1" name="Form" source="C:\Users\Fabiana\Documents\ROBOT FRAMEWORK PROJETOS\Robotframework_projeto1\form.robot">
+<test id="s1-t1" name="Cenário 1: Preencher login" line="22">
+<kw name="abrir navegador">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://parabank.parasoft.com/parabank/register.htm;jsessionid=3EB86AD1A40914FB8DAF2E7C6F6AA93F</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231211 15:35:15.088" level="INFO">Opening browser 'chrome' to base url 'https://parabank.parasoft.com/parabank/register.htm;jsessionid=3EB86AD1A40914FB8DAF2E7C6F6AA93F'.</msg>
+<status status="PASS" starttime="20231211 15:35:15.087" endtime="20231211 15:35:21.443"/>
+</kw>
+<status status="PASS" starttime="20231211 15:35:15.086" endtime="20231211 15:35:21.443"/>
+</kw>
+<kw name="preencher campos">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_customer.firstName}</arg>
+<arg>Alanis</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231211 15:35:21.453" level="INFO">Typing text 'Alanis' into text field 'id:customer.firstName'.</msg>
+<status status="PASS" starttime="20231211 15:35:21.451" endtime="20231211 15:35:21.660"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231211 15:35:22.661" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231211 15:35:21.660" endtime="20231211 15:35:22.661"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_customer.lastName}</arg>
+<arg>Morrissette</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231211 15:35:22.662" level="INFO">Typing text 'Morrissette' into text field 'id:customer.lastName'.</msg>
+<status status="PASS" starttime="20231211 15:35:22.661" endtime="20231211 15:35:22.942"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231211 15:35:23.943" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231211 15:35:22.942" endtime="20231211 15:35:23.943"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_customer.address.street}</arg>
+<arg>Canada Street 5555</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231211 15:35:23.944" level="INFO">Typing text 'Canada Street 5555' into text field 'id:customer.address.street'.</msg>
+<status status="PASS" starttime="20231211 15:35:23.943" endtime="20231211 15:35:24.181"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231211 15:35:25.182" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231211 15:35:24.182" endtime="20231211 15:35:25.182"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_customer.address.city}</arg>
+<arg>Dale City</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231211 15:35:25.183" level="INFO">Typing text 'Dale City' into text field 'id:customer.address.city'.</msg>
+<status status="PASS" starttime="20231211 15:35:25.182" endtime="20231211 15:35:25.341"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231211 15:35:26.342" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231211 15:35:25.341" endtime="20231211 15:35:26.342"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${textarea_customer.address.state}</arg>
+<arg>Vancouver</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231211 15:35:26.343" level="INFO">Typing text 'Vancouver' into text field 'id:customer.address.state'.</msg>
+<status status="PASS" starttime="20231211 15:35:26.342" endtime="20231211 15:35:26.509"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231211 15:35:27.510" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231211 15:35:26.510" endtime="20231211 15:35:27.510"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_customer.address.zipCode}</arg>
+<arg>30306569</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231211 15:35:27.511" level="INFO">Typing text '30306569' into text field 'id:customer.address.zipCode'.</msg>
+<status status="PASS" starttime="20231211 15:35:27.510" endtime="20231211 15:35:27.676"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231211 15:35:28.678" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231211 15:35:27.677" endtime="20231211 15:35:28.678"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_customer.phoneNumber}</arg>
+<arg>2546 89523</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231211 15:35:28.680" level="INFO">Typing text '2546 89523' into text field 'id:customer.phoneNumber'.</msg>
+<status status="PASS" starttime="20231211 15:35:28.678" endtime="20231211 15:35:28.857"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231211 15:35:29.859" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231211 15:35:28.857" endtime="20231211 15:35:29.859"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_customer.ssn}</arg>
+<arg>32323232</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231211 15:35:29.860" level="INFO">Typing text '32323232' into text field 'id: customer.ssn'.</msg>
+<status status="PASS" starttime="20231211 15:35:29.859" endtime="20231211 15:35:30.015"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231211 15:35:31.017" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231211 15:35:30.015" endtime="20231211 15:35:31.017"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_customer.username}</arg>
+<arg>Alanis</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231211 15:35:31.018" level="INFO">Typing text 'Alanis' into text field 'id:customer.username'.</msg>
+<status status="PASS" starttime="20231211 15:35:31.017" endtime="20231211 15:35:31.168"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231211 15:35:32.169" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231211 15:35:31.168" endtime="20231211 15:35:32.169"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_customer.password}</arg>
+<arg>333333</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231211 15:35:32.170" level="INFO">Typing text '333333' into text field 'id:customer.password'.</msg>
+<status status="PASS" starttime="20231211 15:35:32.169" endtime="20231211 15:35:32.310"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231211 15:35:33.310" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231211 15:35:32.310" endtime="20231211 15:35:33.310"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_repeatedPassword}</arg>
+<arg>333333</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231211 15:35:33.311" level="INFO">Typing text '333333' into text field 'id:repeatedPassword'.</msg>
+<status status="PASS" starttime="20231211 15:35:33.310" endtime="20231211 15:35:33.457"/>
+</kw>
+<status status="PASS" starttime="20231211 15:35:21.450" endtime="20231211 15:35:33.458"/>
+</kw>
+<status status="PASS" starttime="20231211 15:35:15.085" endtime="20231211 15:35:33.458"/>
+</test>
+<test id="s1-t2" name="Cenário 2: Registrar" line="26">
+<kw name="clickar em submit">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${input_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231211 15:35:33.463" level="INFO">Clicking element 'class:button'.</msg>
+<status status="PASS" starttime="20231211 15:35:33.461" endtime="20231211 15:35:33.988"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231211 15:35:34.989" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231211 15:35:33.988" endtime="20231211 15:35:34.989"/>
+</kw>
+<status status="PASS" starttime="20231211 15:35:33.461" endtime="20231211 15:35:34.989"/>
+</kw>
+<status status="PASS" starttime="20231211 15:35:33.460" endtime="20231211 15:35:34.990"/>
+</test>
+<status status="PASS" starttime="20231211 15:35:14.599" endtime="20231211 15:35:34.993"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Form">Form</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20231211 15:35:15.081" level="ERROR">Error in file 'C:\Users\Fabiana\Documents\ROBOT FRAMEWORK PROJETOS\Robotframework_projeto1\form.robot' on line 3: Error in file 'C:\Users\Fabiana\Documents\ROBOT FRAMEWORK PROJETOS\Robotframework_projeto1\estrutura.robot' on line 20: Resource file with 'Test Cases' section is invalid.</msg>
+</errors>
+</robot>
