@@ -1,178 +1,178 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231211 15:35:14.596" rpa="false" schemaversion="4">
-<suite id="s1" name="Form" source="C:\Users\Fabiana\Documents\ROBOT FRAMEWORK PROJETOS\Robotframework_projeto1\form.robot">
-<test id="s1-t1" name="Cenário 1: Preencher login" line="22">
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231211 19:57:41.440" rpa="false" schemaversion="4">
+<suite id="s1" name="Formxpath" source="C:\Users\Fabiana\Documents\ROBOT FRAMEWORK PROJETOS\Robotframework_projeto1\formxpath.robot">
+<test id="s1-t1" name="Cenário 1: Preencher Registro" line="22">
 <kw name="abrir navegador">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>https://parabank.parasoft.com/parabank/register.htm;jsessionid=3EB86AD1A40914FB8DAF2E7C6F6AA93F</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231211 15:35:15.088" level="INFO">Opening browser 'chrome' to base url 'https://parabank.parasoft.com/parabank/register.htm;jsessionid=3EB86AD1A40914FB8DAF2E7C6F6AA93F'.</msg>
-<status status="PASS" starttime="20231211 15:35:15.087" endtime="20231211 15:35:21.443"/>
+<msg timestamp="20231211 19:57:41.838" level="INFO">Opening browser 'chrome' to base url 'https://parabank.parasoft.com/parabank/register.htm;jsessionid=3EB86AD1A40914FB8DAF2E7C6F6AA93F'.</msg>
+<status status="PASS" starttime="20231211 19:57:41.837" endtime="20231211 19:57:48.159"/>
 </kw>
-<status status="PASS" starttime="20231211 15:35:15.086" endtime="20231211 15:35:21.443"/>
+<status status="PASS" starttime="20231211 19:57:41.837" endtime="20231211 19:57:48.160"/>
 </kw>
 <kw name="preencher campos">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${input_customer.firstName}</arg>
 <arg>Alanis</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231211 15:35:21.453" level="INFO">Typing text 'Alanis' into text field 'id:customer.firstName'.</msg>
-<status status="PASS" starttime="20231211 15:35:21.451" endtime="20231211 15:35:21.660"/>
+<msg timestamp="20231211 19:57:48.166" level="INFO">Typing text 'Alanis' into text field '//input[@id="customer.firstName"]'.</msg>
+<status status="PASS" starttime="20231211 19:57:48.162" endtime="20231211 19:57:48.370"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231211 15:35:22.661" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20231211 15:35:21.660" endtime="20231211 15:35:22.661"/>
+<msg timestamp="20231211 19:57:49.372" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231211 19:57:48.370" endtime="20231211 19:57:49.372"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${input_customer.lastName}</arg>
 <arg>Morrissette</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231211 15:35:22.662" level="INFO">Typing text 'Morrissette' into text field 'id:customer.lastName'.</msg>
-<status status="PASS" starttime="20231211 15:35:22.661" endtime="20231211 15:35:22.942"/>
+<msg timestamp="20231211 19:57:49.373" level="INFO">Typing text 'Morrissette' into text field '//input[@id="customer.lastName"]'.</msg>
+<status status="PASS" starttime="20231211 19:57:49.372" endtime="20231211 19:57:49.538"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231211 15:35:23.943" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20231211 15:35:22.942" endtime="20231211 15:35:23.943"/>
+<msg timestamp="20231211 19:57:50.538" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231211 19:57:49.538" endtime="20231211 19:57:50.538"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${input_customer.address.street}</arg>
 <arg>Canada Street 5555</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231211 15:35:23.944" level="INFO">Typing text 'Canada Street 5555' into text field 'id:customer.address.street'.</msg>
-<status status="PASS" starttime="20231211 15:35:23.943" endtime="20231211 15:35:24.181"/>
+<msg timestamp="20231211 19:57:50.540" level="INFO">Typing text 'Canada Street 5555' into text field '//input[@id="customer.address.street"]'.</msg>
+<status status="PASS" starttime="20231211 19:57:50.539" endtime="20231211 19:57:50.700"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231211 15:35:25.182" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20231211 15:35:24.182" endtime="20231211 15:35:25.182"/>
+<msg timestamp="20231211 19:57:51.702" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231211 19:57:50.700" endtime="20231211 19:57:51.702"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${input_customer.address.city}</arg>
 <arg>Dale City</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231211 15:35:25.183" level="INFO">Typing text 'Dale City' into text field 'id:customer.address.city'.</msg>
-<status status="PASS" starttime="20231211 15:35:25.182" endtime="20231211 15:35:25.341"/>
+<msg timestamp="20231211 19:57:51.703" level="INFO">Typing text 'Dale City' into text field '//input[@id="customer.address.city"]'.</msg>
+<status status="PASS" starttime="20231211 19:57:51.702" endtime="20231211 19:57:51.861"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231211 15:35:26.342" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20231211 15:35:25.341" endtime="20231211 15:35:26.342"/>
+<msg timestamp="20231211 19:57:52.861" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231211 19:57:51.861" endtime="20231211 19:57:52.861"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${textarea_customer.address.state}</arg>
 <arg>Vancouver</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231211 15:35:26.343" level="INFO">Typing text 'Vancouver' into text field 'id:customer.address.state'.</msg>
-<status status="PASS" starttime="20231211 15:35:26.342" endtime="20231211 15:35:26.509"/>
+<msg timestamp="20231211 19:57:52.862" level="INFO">Typing text 'Vancouver' into text field '//input[@id="customer.address.state"]'.</msg>
+<status status="PASS" starttime="20231211 19:57:52.861" endtime="20231211 19:57:53.029"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231211 15:35:27.510" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20231211 15:35:26.510" endtime="20231211 15:35:27.510"/>
+<msg timestamp="20231211 19:57:54.030" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231211 19:57:53.029" endtime="20231211 19:57:54.030"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${input_customer.address.zipCode}</arg>
 <arg>30306569</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231211 15:35:27.511" level="INFO">Typing text '30306569' into text field 'id:customer.address.zipCode'.</msg>
-<status status="PASS" starttime="20231211 15:35:27.510" endtime="20231211 15:35:27.676"/>
+<msg timestamp="20231211 19:57:54.031" level="INFO">Typing text '30306569' into text field '//input[@id="customer.address.zipCode"]'.</msg>
+<status status="PASS" starttime="20231211 19:57:54.030" endtime="20231211 19:57:54.188"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231211 15:35:28.678" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20231211 15:35:27.677" endtime="20231211 15:35:28.678"/>
+<msg timestamp="20231211 19:57:55.188" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231211 19:57:54.188" endtime="20231211 19:57:55.188"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${input_customer.phoneNumber}</arg>
 <arg>2546 89523</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231211 15:35:28.680" level="INFO">Typing text '2546 89523' into text field 'id:customer.phoneNumber'.</msg>
-<status status="PASS" starttime="20231211 15:35:28.678" endtime="20231211 15:35:28.857"/>
+<msg timestamp="20231211 19:57:55.189" level="INFO">Typing text '2546 89523' into text field '//input[@id="customer.phoneNumber"]'.</msg>
+<status status="PASS" starttime="20231211 19:57:55.188" endtime="20231211 19:57:55.344"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231211 15:35:29.859" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20231211 15:35:28.857" endtime="20231211 15:35:29.859"/>
+<msg timestamp="20231211 19:57:56.344" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231211 19:57:55.344" endtime="20231211 19:57:56.344"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${input_customer.ssn}</arg>
 <arg>32323232</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231211 15:35:29.860" level="INFO">Typing text '32323232' into text field 'id: customer.ssn'.</msg>
-<status status="PASS" starttime="20231211 15:35:29.859" endtime="20231211 15:35:30.015"/>
+<msg timestamp="20231211 19:57:56.346" level="INFO">Typing text '32323232' into text field '//input[@id="customer.ssn"]'.</msg>
+<status status="PASS" starttime="20231211 19:57:56.344" endtime="20231211 19:57:56.475"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231211 15:35:31.017" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20231211 15:35:30.015" endtime="20231211 15:35:31.017"/>
+<msg timestamp="20231211 19:57:57.475" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231211 19:57:56.475" endtime="20231211 19:57:57.475"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${input_customer.username}</arg>
 <arg>Alanis</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231211 15:35:31.018" level="INFO">Typing text 'Alanis' into text field 'id:customer.username'.</msg>
-<status status="PASS" starttime="20231211 15:35:31.017" endtime="20231211 15:35:31.168"/>
+<msg timestamp="20231211 19:57:57.476" level="INFO">Typing text 'Alanis' into text field '//input[@id="customer.username"]'.</msg>
+<status status="PASS" starttime="20231211 19:57:57.475" endtime="20231211 19:57:57.620"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231211 15:35:32.169" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20231211 15:35:31.168" endtime="20231211 15:35:32.169"/>
+<msg timestamp="20231211 19:57:58.620" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231211 19:57:57.620" endtime="20231211 19:57:58.620"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${input_customer.password}</arg>
 <arg>333333</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231211 15:35:32.170" level="INFO">Typing text '333333' into text field 'id:customer.password'.</msg>
-<status status="PASS" starttime="20231211 15:35:32.169" endtime="20231211 15:35:32.310"/>
+<msg timestamp="20231211 19:57:58.621" level="INFO">Typing text '333333' into text field '//input[@id="customer.password"]'.</msg>
+<status status="PASS" starttime="20231211 19:57:58.620" endtime="20231211 19:57:58.777"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231211 15:35:33.310" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20231211 15:35:32.310" endtime="20231211 15:35:33.310"/>
+<msg timestamp="20231211 19:57:59.777" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231211 19:57:58.777" endtime="20231211 19:57:59.777"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${input_repeatedPassword}</arg>
 <arg>333333</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231211 15:35:33.311" level="INFO">Typing text '333333' into text field 'id:repeatedPassword'.</msg>
-<status status="PASS" starttime="20231211 15:35:33.310" endtime="20231211 15:35:33.457"/>
+<msg timestamp="20231211 19:57:59.778" level="INFO">Typing text '333333' into text field '//input[@id="repeatedPassword"]'.</msg>
+<status status="PASS" starttime="20231211 19:57:59.777" endtime="20231211 19:57:59.911"/>
 </kw>
-<status status="PASS" starttime="20231211 15:35:21.450" endtime="20231211 15:35:33.458"/>
+<status status="PASS" starttime="20231211 19:57:48.161" endtime="20231211 19:57:59.911"/>
 </kw>
-<status status="PASS" starttime="20231211 15:35:15.085" endtime="20231211 15:35:33.458"/>
+<status status="PASS" starttime="20231211 19:57:41.836" endtime="20231211 19:57:59.911"/>
 </test>
 <test id="s1-t2" name="Cenário 2: Registrar" line="26">
-<kw name="clickar em submit">
+<kw name="clickar em registrar">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${input_button}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231211 15:35:33.463" level="INFO">Clicking element 'class:button'.</msg>
-<status status="PASS" starttime="20231211 15:35:33.461" endtime="20231211 15:35:33.988"/>
+<msg timestamp="20231211 19:57:59.915" level="INFO">Clicking element '//input[@value="Register"]'.</msg>
+<status status="PASS" starttime="20231211 19:57:59.914" endtime="20231211 19:58:01.863"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231211 15:35:34.989" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20231211 15:35:33.988" endtime="20231211 15:35:34.989"/>
+<msg timestamp="20231211 19:58:02.864" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231211 19:58:01.864" endtime="20231211 19:58:02.864"/>
 </kw>
-<status status="PASS" starttime="20231211 15:35:33.461" endtime="20231211 15:35:34.989"/>
+<status status="PASS" starttime="20231211 19:57:59.913" endtime="20231211 19:58:02.864"/>
 </kw>
-<status status="PASS" starttime="20231211 15:35:33.460" endtime="20231211 15:35:34.990"/>
+<status status="PASS" starttime="20231211 19:57:59.913" endtime="20231211 19:58:02.865"/>
 </test>
-<status status="PASS" starttime="20231211 15:35:14.599" endtime="20231211 15:35:34.993"/>
+<status status="PASS" starttime="20231211 19:57:41.443" endtime="20231211 19:58:02.867"/>
 </suite>
 <statistics>
 <total>
@@ -181,10 +181,10 @@
 <tag>
 </tag>
 <suite>
-<stat pass="2" fail="0" skip="0" id="s1" name="Form">Form</stat>
+<stat pass="2" fail="0" skip="0" id="s1" name="Formxpath">Formxpath</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20231211 15:35:15.081" level="ERROR">Error in file 'C:\Users\Fabiana\Documents\ROBOT FRAMEWORK PROJETOS\Robotframework_projeto1\form.robot' on line 3: Error in file 'C:\Users\Fabiana\Documents\ROBOT FRAMEWORK PROJETOS\Robotframework_projeto1\estrutura.robot' on line 20: Resource file with 'Test Cases' section is invalid.</msg>
+<msg timestamp="20231211 19:57:41.834" level="ERROR">Error in file 'C:\Users\Fabiana\Documents\ROBOT FRAMEWORK PROJETOS\Robotframework_projeto1\formxpath.robot' on line 3: Error in file 'C:\Users\Fabiana\Documents\ROBOT FRAMEWORK PROJETOS\Robotframework_projeto1\estrutura.robot' on line 20: Resource file with 'Test Cases' section is invalid.</msg>
 </errors>
 </robot>
