@@ -1,30 +1,29 @@
 *** Settings ***
 Library     SeleniumLibrary
-Resource    estrutura.robot
 
 
 *** Variables ***
-${input_customer.firstName}             //input[@id="customer.firstName"]
-${input_customer.lastName}              //input[@id="customer.lastName"]
-${input_customer.address.street}        //input[@id="customer.address.street"]
-${input_customer.address.city}          //input[@id="customer.address.city"]
-${textarea_customer.address.state}      //input[@id="customer.address.state"]
-${input_customer.address.zipCode}       //input[@id="customer.address.zipCode"]
-${input_customer.phoneNumber}           //input[@id="customer.phoneNumber"]
-${input_customer.ssn}                   //input[@id="customer.ssn"]
-${input_customer.username}              //input[@id="customer.username"]
-${input_customer.password}              //input[@id="customer.password"]
-${input_repeatedPassword}               //input[@id="repeatedPassword"]
-${input_button}                         //input[@value="Register"]
+${input_customer.firstName}             id:customer.firstName
+${input_customer.lastName}              id:customer.lastName
+${input_customer.address.street}        id:customer.address.street
+${input_customer.address.city}          id:customer.address.city
+${textarea_customer.address.state}      id:customer.address.state
+${input_customer.address.zipCode}       id:customer.address.zipCode
+${input_customer.phoneNumber}           id:customer.phoneNumber
+${input_customer.ssn}                   id: customer.ssn
+${input_customer.username}              id:customer.username
+${input_customer.password}              id:customer.password
+${input_repeatedPassword}               id:repeatedPassword
+${input_button}                         class:button
 
 
 *** Test Cases ***
-Cenário 1: Preencher Registro
+Cenário 1: Preencher login
     abrir navegador
     preencher campos
 
 Cenário 2: Registrar
-    clickar em registrar
+    clickar em submit
 
 
 *** Keywords ***
@@ -56,6 +55,6 @@ preencher campos
     Sleep    1s
     Input Text    ${input_repeatedPassword}    333333
 
-clickar em registrar
+clickar em submit
     Click Element    ${input_button}
     Sleep    1s

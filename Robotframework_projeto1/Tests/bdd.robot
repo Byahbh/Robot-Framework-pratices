@@ -19,6 +19,7 @@ ${prova}                //span[contains(text(),"Compartilhar")] [1]
 
 *** Test Cases ***
 Cenário 1: Executar video no site do youtube
+    [Tags]    regressivo
     Dado que eu acesso o youtube
     Quando digito o nome da música
     E clico no botão buscar

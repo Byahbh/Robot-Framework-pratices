@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231211 23:27:14.974" rpa="false" schemaversion="4">
+<suite id="s1" name="Tests" source="C:\Users\Fabiana\Documents\ROBOT FRAMEWORK PROJETOS\Robotframework_projeto1\Tests">
+<suite id="s1-s1" name="Bdd" source="C:\Users\Fabiana\Documents\ROBOT FRAMEWORK PROJETOS\Robotframework_projeto1\Tests\bdd.robot">
+<test id="s1-s1-t1" name="Cenário 1: Executar video no site do youtube" line="21">
+<kw name="Dado que eu acesso o youtube">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231211 23:27:15.405" level="INFO">Opening browser 'chrome' to base url 'https://www.youtube.com/'.</msg>
+<status status="PASS" starttime="20231211 23:27:15.404" endtime="20231211 23:27:23.225"/>
+</kw>
+<status status="PASS" starttime="20231211 23:27:15.404" endtime="20231211 23:27:23.226"/>
+</kw>
+<kw name="Quando digito o nome da música">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_Pesquisa}</arg>
+<arg>${nomeDaMusica}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231211 23:27:23.234" level="INFO">Typing text 'Jungkook Hate You Official' into text field '//input[@id="search"]'.</msg>
+<status status="PASS" starttime="20231211 23:27:23.232" endtime="20231211 23:27:25.130"/>
+</kw>
+<status status="PASS" starttime="20231211 23:27:23.232" endtime="20231211 23:27:25.130"/>
+</kw>
+<kw name="E clico no botão buscar">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Button_Pesquisa}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231211 23:27:25.132" level="INFO">Clicking element '//button[@id="search-icon-legacy"]'.</msg>
+<status status="PASS" starttime="20231211 23:27:25.131" endtime="20231211 23:27:25.746"/>
+</kw>
+<status status="PASS" starttime="20231211 23:27:25.131" endtime="20231211 23:27:25.746"/>
+</kw>
+<kw name="E clico na primeira opção da lista">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Primeiro}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231211 23:27:25.751" endtime="20231211 23:27:27.799"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Primeiro}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231211 23:27:27.800" level="INFO">Clicking element '(//yt-formatted-string[@class="style-scope ytd-video-renderer"])[1]'.</msg>
+<status status="PASS" starttime="20231211 23:27:27.799" endtime="20231211 23:27:28.406"/>
+</kw>
+<status status="PASS" starttime="20231211 23:27:25.751" endtime="20231211 23:27:28.407"/>
+</kw>
+<kw name="Então o video é executado">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${prova}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231211 23:27:28.409" endtime="20231211 23:27:31.246"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${prova}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20231211 23:27:31.910" level="INFO">Element '//span[contains(text(),"Compartilhar")] [1]' is displayed.</msg>
+<status status="PASS" starttime="20231211 23:27:31.246" endtime="20231211 23:27:31.911"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231211 23:27:32.912" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231211 23:27:31.911" endtime="20231211 23:27:32.912"/>
+</kw>
+<status status="PASS" starttime="20231211 23:27:28.409" endtime="20231211 23:27:32.912"/>
+</kw>
+<tag>regressivo</tag>
+<status status="PASS" starttime="20231211 23:27:15.403" endtime="20231211 23:27:32.914"/>
+</test>
+<status status="PASS" starttime="20231211 23:27:15.018" endtime="20231211 23:27:32.916"/>
+</suite>
+<suite id="s1-s2" name="Formxpath" source="C:\Users\Fabiana\Documents\ROBOT FRAMEWORK PROJETOS\Robotframework_projeto1\Tests\formxpath.robot">
+<test id="s1-s2-t1" name="Cenário 1: Preencher Registro" line="20">
+<kw name="abrir navegador">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://parabank.parasoft.com/parabank/register.htm;jsessionid=3EB86AD1A40914FB8DAF2E7C6F6AA93F</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231211 23:27:32.934" level="INFO">Opening browser 'chrome' to base url 'https://parabank.parasoft.com/parabank/register.htm;jsessionid=3EB86AD1A40914FB8DAF2E7C6F6AA93F'.</msg>
+<status status="PASS" starttime="20231211 23:27:32.933" endtime="20231211 23:27:40.585"/>
+</kw>
+<status status="PASS" starttime="20231211 23:27:32.932" endtime="20231211 23:27:40.585"/>
+</kw>
+<kw name="preencher campos">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_customer.firstName}</arg>
+<arg>Alanis</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231211 23:27:40.638" level="INFO">Typing text 'Alanis' into text field '//input[@id="customer.firstName"]'.</msg>
+<status status="PASS" starttime="20231211 23:27:40.637" endtime="20231211 23:27:41.163"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231211 23:27:42.165" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231211 23:27:41.163" endtime="20231211 23:27:42.165"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_customer.lastName}</arg>
+<arg>Morrissette</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231211 23:27:42.166" level="INFO">Typing text 'Morrissette' into text field '//input[@id="customer.lastName"]'.</msg>
+<status status="PASS" starttime="20231211 23:27:42.165" endtime="20231211 23:27:42.666"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231211 23:27:43.668" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231211 23:27:42.666" endtime="20231211 23:27:43.668"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_customer.address.street}</arg>
+<arg>Canada Street 5555</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231211 23:27:43.669" level="INFO">Typing text 'Canada Street 5555' into text field '//input[@id="customer.address.street"]'.</msg>
+<status status="PASS" starttime="20231211 23:27:43.668" endtime="20231211 23:27:43.979"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231211 23:27:44.980" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231211 23:27:43.980" endtime="20231211 23:27:44.980"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_customer.address.city}</arg>
+<arg>Dale City</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231211 23:27:44.981" level="INFO">Typing text 'Dale City' into text field '//input[@id="customer.address.city"]'.</msg>
+<status status="PASS" starttime="20231211 23:27:44.980" endtime="20231211 23:27:45.272"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231211 23:27:46.274" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231211 23:27:45.272" endtime="20231211 23:27:46.274"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${textarea_customer.address.state}</arg>
+<arg>Vancouver</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231211 23:27:46.275" level="INFO">Typing text 'Vancouver' into text field '//input[@id="customer.address.state"]'.</msg>
+<status status="PASS" starttime="20231211 23:27:46.274" endtime="20231211 23:27:46.468"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231211 23:27:47.469" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231211 23:27:46.468" endtime="20231211 23:27:47.469"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_customer.address.zipCode}</arg>
+<arg>30306569</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231211 23:27:47.470" level="INFO">Typing text '30306569' into text field '//input[@id="customer.address.zipCode"]'.</msg>
+<status status="PASS" starttime="20231211 23:27:47.469" endtime="20231211 23:27:47.633"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231211 23:27:48.634" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231211 23:27:47.634" endtime="20231211 23:27:48.634"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_customer.phoneNumber}</arg>
+<arg>2546 89523</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231211 23:27:48.635" level="INFO">Typing text '2546 89523' into text field '//input[@id="customer.phoneNumber"]'.</msg>
+<status status="PASS" starttime="20231211 23:27:48.634" endtime="20231211 23:27:48.821"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231211 23:27:49.823" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231211 23:27:48.821" endtime="20231211 23:27:49.823"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_customer.ssn}</arg>
+<arg>32323232</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231211 23:27:49.825" level="INFO">Typing text '32323232' into text field '//input[@id="customer.ssn"]'.</msg>
+<status status="PASS" starttime="20231211 23:27:49.823" endtime="20231211 23:27:50.063"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231211 23:27:51.064" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231211 23:27:50.063" endtime="20231211 23:27:51.064"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_customer.username}</arg>
+<arg>Alanis</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231211 23:27:51.065" level="INFO">Typing text 'Alanis' into text field '//input[@id="customer.username"]'.</msg>
+<status status="PASS" starttime="20231211 23:27:51.064" endtime="20231211 23:27:51.217"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231211 23:27:52.218" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231211 23:27:51.217" endtime="20231211 23:27:52.218"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_customer.password}</arg>
+<arg>333333</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231211 23:27:52.219" level="INFO">Typing text '333333' into text field '//input[@id="customer.password"]'.</msg>
+<status status="PASS" starttime="20231211 23:27:52.218" endtime="20231211 23:27:52.385"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231211 23:27:53.385" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231211 23:27:52.385" endtime="20231211 23:27:53.385"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_repeatedPassword}</arg>
+<arg>333333</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231211 23:27:53.387" level="INFO">Typing text '333333' into text field '//input[@id="repeatedPassword"]'.</msg>
+<status status="PASS" starttime="20231211 23:27:53.385" endtime="20231211 23:27:53.551"/>
+</kw>
+<status status="PASS" starttime="20231211 23:27:40.636" endtime="20231211 23:27:53.551"/>
+</kw>
+<tag>regressivo</tag>
+<status status="PASS" starttime="20231211 23:27:32.931" endtime="20231211 23:27:53.551"/>
+</test>
+<status status="PASS" starttime="20231211 23:27:32.919" endtime="20231211 23:27:53.553"/>
+</suite>
+<status status="PASS" starttime="20231211 23:27:14.978" endtime="20231211 23:27:53.556"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="2" fail="0" skip="0">regressivo</stat>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Bdd">Tests.Bdd</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="Formxpath">Tests.Formxpath</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
